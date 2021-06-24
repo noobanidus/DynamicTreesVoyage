@@ -1,0 +1,44 @@
+license="MIT"
+modLoader="javafml"
+loaderVersion="[35,)"
+issueTrackerURL="https://github.com/Noobanidus/DynamicTreesMysticalBiomes/issues"
+
+[[mods]]
+modId="dtmysticalbiomes"
+version="${version}"
+displayName="Dynamic Trees for TerraForged"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-mysticalbiomes"
+logoFile="dtt-logo.png"
+credits=""
+authors="Noobanidus"
+description='''
+Adds Dynamic Trees compatibility to Mystical Biomes.
+'''
+
+[[dependencies.dtmysticalbiomes]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dtmysticalbiomes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4,1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dtmysticalbiomes]]
+    modId="dynamictrees"
+    mandatory=true
+    versionRange="[0.10.0-Beta13,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dtmysticalbiomes]]
+    modId="mysticalbiomes"
+    mandatory=true
+    versionRange="[0.0.0.3,)"
+    ordering="AFTER"
+    side="BOTH"

@@ -1,0 +1,19 @@
+[
+  {
+    "_comment": "Cancel any trees from Mystical Biomes Sprout biomes.",
+    "select": { "name": "mysticalbiomes:sprout_.*" },
+    "cancellers": {
+      "type": "tree",
+      "namespaces": ["minecraft", "mysticalbiomes"]
+    }
+  },
+  {
+    "_comment": "Puts oak trees in your sprout forest",
+    "select": { "name":  "mysticalbiomes:sprout_.*"},
+    "apply": {
+      "species": "oak",
+      "density": [ 0.6 ],
+      "chance": 0.3
+    }
+  }
+]
