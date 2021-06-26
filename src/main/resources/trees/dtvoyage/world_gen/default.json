@@ -1,0 +1,43 @@
+[
+  {
+    "_comment": "Cancel any trees from Voyage.",
+    "select": { "name": "voyage:.*" },
+    "cancellers": {
+      "type": "tree",
+      "namespaces": ["minecraft"]
+    }
+  },
+  {
+    "_comment": "If DT+ is loaded, remove default cacti and add dynamic cacti to Desert Shrubland.",
+    "select" : { "name": "voyage:desert_.*" },
+    "only_if_loaded": "dynamictreesplus",
+    "cancellers": {
+      "type": "dynamictreesplus:cactus",
+      "namespace": "minecraft"
+    },
+    "apply": {
+      "species": {
+        "method": "splice_before",
+        "random": {
+          "...": 21,
+          "dynamictreesplus:pillar_cactus" : 6,
+          "dynamictreesplus:pipe_cactus" : 1
+        }
+      }
+    }
+  },
+  {
+    "select": { "name": "voyage:forest_lush" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "oak" : 4,
+          "tall_birch" : 1
+        }
+      },
+      "density": [ 1 ],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  }
+]

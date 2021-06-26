@@ -1,44 +1,44 @@
 license="MIT"
 modLoader="javafml"
-loaderVersion="[35,)"
-issueTrackerURL="https://github.com/Noobanidus/DynamicTreesMysticalBiomes/issues"
+loaderVersion="[36,)"
+issueTrackerURL="https://github.com/Noobanidus/DynamicTreesVoyage/issues"
 
 [[mods]]
-modId="dtmysticalbiomes"
+modId="dtvoyage"
 version="${version}"
-displayName="Dynamic Trees for TerraForged"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-mysticalbiomes"
+displayName="Dynamic Trees for Voyage"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dynamic-trees-voyage"
 logoFile="dtt-logo.png"
 credits=""
 authors="Noobanidus"
 description='''
-Adds Dynamic Trees compatibility to Mystical Biomes.
+Adds Dynamic Trees compatibility to Voyage.
 '''
 
-[[dependencies.dtmysticalbiomes]]
+[[dependencies.dtvoyage]]
     modId="forge"
     mandatory=true
-    versionRange="[35,)"
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtmysticalbiomes]]
+[[dependencies.dtvoyage]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.4,1.16.5]"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dtmysticalbiomes]]
+[[dependencies.dtvoyage]]
     modId="dynamictrees"
     mandatory=true
     versionRange="[0.10.0-Beta13,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.dtmysticalbiomes]]
-    modId="mysticalbiomes"
+[[dependencies.dtvoyage]]
+    modId="voyage"
     mandatory=true
-    versionRange="[0.0.0.3,)"
+    versionRange="[1.0.3,)"
     ordering="AFTER"
     side="BOTH"
